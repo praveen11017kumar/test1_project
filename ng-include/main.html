@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>
+
+    <script src="ajs.js"></script>
+
+</head>
+
+<body ng-app="main" ng-controller="cntrl">
+
+    <br> {{A}}
+    <br>{{B}}
+    <select ng-model="empdata">
+        <option value="empTable.html">Table</option>
+        <option value="empList.html">List</option>
+
+    </select>
+    <div ng-include="empdata"></div>
+
+
+</body>
+
+</html>
